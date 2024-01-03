@@ -1,0 +1,165 @@
+.create_recipes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.name_recipes {
+  margin-top: 0 !important;
+}
+
+.block_ingredients {
+  margin-top: 25px;
+}
+
+.create_recipes > div:first-child {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 450px calc(100% - 490px);
+  grid-template-columns: 450px calc(100% - 490px);
+}
+
+.create_recipes > div {
+  margin-top: 0;
+}
+
+.create_recipes > div:last-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+}
+
+.create_recipes > div:first-child > div:last-child {
+  width: 100%;
+  padding-left: 40px;
+}
+
+.block_ingredients > .content {
+  overflow: auto;
+}
+
+.picker_image {
+  width: 100%;
+  height: 248px;
+  border-radius: 38px;
+  background: hsla(0, 0%, 100%, 0.55);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(/assets/create_recipes/picker_image.png);
+}
+
+.picker_image > label {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 38px;
+  cursor: pointer;
+}
+
+.title_recipes {
+  width: 100%;
+  height: 73px;
+  padding: 0 25px 0 25px;
+  color: black;
+  background: hsla(0, 0%, 100%, 0.55);
+  font-size: 20px;
+  font-family: "Ubuntu_Regular";
+}
+
+.title_recipes::-webkit-input-placeholder {
+  color: black;
+}
+
+.title_recipes::-moz-placeholder {
+  color: black;
+}
+
+.title_recipes:-ms-input-placeholder {
+  color: black;
+}
+
+.title_recipes::-ms-input-placeholder {
+  color: black;
+}
+
+.title_recipes::placeholder {
+  color: black;
+}
+
+.picker_ingredients {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 73px;
+  padding: 0 25px 0 25px;
+  background: hsla(0, 0%, 100%, 0.55);
+  font-size: 20px;
+  font-family: "Ubuntu_Regular";
+  cursor: pointer;
+}
+
+.desc_recipes > .content {
+  padding: 25px;
+  background: hsla(0, 0%, 100%, 0.55);
+}
+
+.content > .description_recipes {
+  width: 100%;
+}
+
+.description_recipes > textarea {
+  width: 100%;
+  height: 200px;
+  color: black;
+  background: none;
+  font-size: 20px;
+  font-family: "Ubuntu_Regular";
+  resize: none;
+}
+
+.description_recipes > textarea::-webkit-input-placeholder {
+  color: black;
+}
+
+.description_recipes > textarea::-moz-placeholder {
+  color: black;
+}
+
+.description_recipes > textarea:-ms-input-placeholder {
+  color: black;
+}
+
+.description_recipes > textarea::-ms-input-placeholder {
+  color: black;
+}
+
+.description_recipes > textarea::placeholder {
+  color: black;
+}
+
+.block_recipes_ready > a {
+  padding: 25px;
+  border-radius: 35px;
+  color: #fff;
+  background: #FF7A00;
+  font-size: 20px;
+  font-family: "Ubuntu_Regular";
+}

@@ -1,0 +1,132 @@
+main {
+  margin-left: 50px;
+  max-height: 100%;
+  width: 100%;
+  padding: 40px;
+  border-radius: 65px;
+  background: hsla(0, 0%, 66%, 0.45);
+  overflow-y: scroll;
+}
+
+main > div:first-child {
+  margin-top: 0;
+}
+
+main > div {
+  margin-top: 25px;
+}
+
+.main_block_label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main_block_label > a {
+  font-size: 12px;
+  font-family: "Ubuntu_Regular";
+  color: #000;
+}
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 20px;
+  border-radius: 38px;
+  overflow-x: scroll;
+}
+
+.card_recipe {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-left: 25px;
+  min-width: 377px;
+  max-width: 377px;
+  height: 248px;
+  max-height: 271px;
+  border-radius: 38px;
+  background-image: url(/assets/cards/tartaletki.png);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.card_recipe:first-child {
+  margin-left: 0;
+}
+
+.card_recipe_description {
+  padding: 18px;
+  background: hsla(0, 0%, 0%, 0.2);
+  border-radius: 0 0 38px 38px;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  color: #ffffff;
+  font-family: "Ubuntu_Regular";
+}
+
+.card_recipe_description > span {
+  font-size: 20px;
+}
+
+.card_recipe_description > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10px;
+  font-size: 17px;
+}
+
+.card_recipe_description > div > span {
+  margin-left: 10px;
+}
+
+.card_author,
+.card_product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 25px;
+  height: 83px;
+  padding: 0 15px 0 15px;
+  border-radius: 38px;
+  background: hsla(0, 0%, 100%, 0.55);
+  cursor: pointer;
+}
+
+.img_author,
+.img_products {
+  height: 53px;
+}
+
+.card_author:first-child,
+.card_product:first-child {
+  margin-left: 0;
+}
+
+.card_author > span,
+.card_product > span {
+  padding-left: 15px;
+  padding-right: 5px;
+  font-size: 20px;
+  font-family: "Ubuntu_Regular";
+}
