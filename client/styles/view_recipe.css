@@ -1,0 +1,368 @@
+.block_recipe_viewer {
+  display: -ms-grid !important;
+  display: grid !important;
+      grid-template-areas: "a a a" !important;
+  -ms-grid-columns: 0px 100% 0px !important;
+  grid-template-columns: 0px 100% 0px !important;
+}
+
+.block_recipe_viewer > main {
+  margin-left: 0;
+  max-width: 100%;
+  width: calc(100% - 80px);
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.recipe_viewer_top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.recipe_viewer_top > .right {
+  padding-left: 40px;
+}
+
+@media screen and (min-width: 1500px) {
+  .recipe_viewer_top > .right {
+    padding-left: 100px;
+  }
+}
+.block_use_product,
+.block_recipe_description {
+  margin-top: 40px;
+}
+
+.block_use_product > .content > ul {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 10px;
+      grid-template-areas: "a a a a a a a a";
+}
+
+.block_use_product > .content > ul > li {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px 15px 10px 15px;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 15px;
+  color: #fff;
+  background: #FA8E2C;
+  font-family: "Ubuntu_regular";
+}
+
+.block_use_product > .content > ul > li > span {
+  margin-top: 2px;
+  color: #80430a;
+  font-family: "Ubuntu_Bold";
+}
+
+.recipe_photo {
+  width: 474px;
+  height: 312px;
+  border-radius: 45px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url(https://images.unsplash.com/photo-1631883522604-6cf2063e2289?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+
+@media screen and (min-width: 1500px) {
+  .recipe_photo {
+    width: 574px;
+    height: 412px;
+  }
+}
+.left > div:last-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-top: 40px;
+  font-size: 35px;
+}
+
+.left > div > .block_author {
+  margin-left: 40px;
+}
+
+.rating_point > span:last-child {
+  margin-left: 10px;
+  font-family: "Ubuntu_Bold";
+}
+
+.block_rating > .content {
+  border-radius: 0;
+  font-size: 20px;
+  font-family: "Ubuntu_Regular";
+  overflow-x: visible;
+}
+
+.block_rating > .content > ul > li {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.rating_num {
+  text-align: center;
+  padding: 0 8px 0 8px;
+  margin-left: 10px;
+  border-radius: 100px;
+}
+
+.rating_point_sum {
+  padding: 5px 11px;
+  border-radius: 50px;
+  font-family: "Ubuntu_Bold";
+}
+
+.rating_point_5 + .rating_num {
+  background: #6FDF17;
+}
+
+.rating_point_4 + .rating_num {
+  background: #F1DF2F;
+}
+
+.rating_point_3 + .rating_num {
+  background: #FF9900;
+}
+
+.rating_point_2 + .rating_num {
+  background: #FE2800;
+}
+
+.rating_point_5 {
+  background: #6FDF17;
+}
+
+.rating_point_4 {
+  background: #F1DF2F;
+}
+
+.rating_point_3 {
+  background: #FF9900;
+}
+
+.rating_point_2 {
+  background: #FE2800;
+}
+
+.block_author > .content {
+  overflow-x: visible;
+}
+
+.block_author > .content > .card_author {
+  padding: 0 10px 0 10px;
+  height: 51px;
+}
+
+.block_author > .content > .card_author > .img_author {
+  width: 31px;
+  height: 31px;
+}
+
+.block_author > .content > .card_author > .card_author_name {
+  padding-left: 10px;
+  padding-right: 5px;
+  font-size: 15px;
+}
+
+.block_recipe_title {
+  font-size: 35px;
+  font-family: "Ubuntu_Bold";
+}
+
+.block_use_product > .content {
+  overflow-x: visible;
+}
+
+.block_recipe_description {
+  max-width: 700px;
+  max-height: 350px;
+  padding: 40px;
+  border-radius: 38px;
+  background: hsla(0, 0%, 100%, 0.55);
+  overflow-y: scroll;
+}
+
+.block_recipe_description > font {
+  font-size: 20px;
+  font-family: "Ubuntu_Regular";
+}
+
+.recipe_viewer_bottom {
+  margin-top: 80px;
+}
+
+#block_reviews {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "a a";
+  grid-gap: 30px;
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 1000px) {
+  #block_reviews {
+        grid-template-areas: "a";
+  }
+}
+@media screen and (min-width: 1500px) {
+  #block_reviews {
+        grid-template-areas: "a a a";
+  }
+}
+.card_reviews {
+  padding: 30px;
+  border-radius: 38px;
+  background: hsla(0, 0%, 100%, 0.55);
+  font-size: 20px;
+  font-family: "Ubuntu_Regular";
+}
+
+.card_reviews > div:first-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card_reviews > div:last-child {
+  margin-top: 15px;
+}
+
+.card_reviews_author_image {
+  width: 53px;
+  height: 53px;
+  border-radius: 100px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(https://images.unsplash.com/photo-1505628346881-b72b27e84530?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+
+.card_reviews_author_name_and_rating {
+  display: -ms-grid;
+  display: grid;
+  margin-left: 15px;
+}
+
+.card_reviews_author_name {
+  padding-top: 5px;
+}
+
+.card_reviews_author_rating {
+  padding-bottom: 5px;
+  font-size: 18px;
+  font-family: "Ubuntu_Bold";
+}
+
+.recipe_viewer_send_comment {
+  pointer-events: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  bottom: 60px;
+  width: calc(100% - 100px);
+  height: 70px;
+  background: none;
+}
+
+.recipe_viewer_send_comment_panel {
+  pointer-events: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 800px;
+  width: calc(100% - 300px);
+  height: 100%;
+  padding: 0 15px 0 15px;
+  border-radius: 28px;
+  background: #fff;
+  opacity: 0;
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.recipe_viewer_send_comment_panel.active {
+  pointer-events: all;
+  opacity: 1;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
+.recipe_viewer_send_comment_author_image {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  border-radius: 100px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(https://images.unsplash.com/photo-1564847056506-53642434024d?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+
+.recipe_viewer_send_comment_input {
+  width: 100%;
+  margin-left: 60px;
+}
+
+.recipe_viewer_send_comment_input::-webkit-input-placeholder {
+  font-size: 20px;
+  font-family: "Ubuntu_Regular";
+  color: #000;
+}
+
+.recipe_viewer_send_comment_input::-moz-placeholder {
+  font-size: 20px;
+  font-family: "Ubuntu_Regular";
+  color: #000;
+}
+
+.recipe_viewer_send_comment_input:-ms-input-placeholder {
+  font-size: 20px;
+  font-family: "Ubuntu_Regular";
+  color: #000;
+}
+
+.recipe_viewer_send_comment_input::-ms-input-placeholder {
+  font-size: 20px;
+  font-family: "Ubuntu_Regular";
+  color: #000;
+}
+
+.recipe_viewer_send_comment_input,
+.recipe_viewer_send_comment_input::placeholder {
+  font-size: 20px;
+  font-family: "Ubuntu_Regular";
+  color: #000;
+}
+
+.recipe_viewer_send_comment_buttonSubmit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: none;
+  background: none;
+  cursor: pointer;
+}

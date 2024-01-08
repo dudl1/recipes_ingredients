@@ -60,12 +60,23 @@ main > div {
   max-height: 271px;
   border-radius: 38px;
   background-image: url(/assets/cards/tartaletki.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   overflow: hidden;
   cursor: pointer;
 }
 
 .card_recipe:first-child {
   margin-left: 0;
+}
+
+.card_recipe_title {
+  display: block;
+  max-width: 100%;
+  max-height: 50px;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .card_recipe_description {
@@ -93,6 +104,11 @@ main > div {
   font-size: 17px;
 }
 
+.card_recipe_description > div > .img_author {
+  width: 28px;
+  height: 28px;
+}
+
 .card_recipe_description > div > span {
   margin-left: 10px;
 }
@@ -108,6 +124,7 @@ main > div {
   margin-left: 25px;
   height: 83px;
   padding: 0 15px 0 15px;
+  border: none;
   border-radius: 38px;
   background: hsla(0, 0%, 100%, 0.55);
   cursor: pointer;
@@ -115,7 +132,11 @@ main > div {
 
 .img_author,
 .img_products {
+  width: 53px;
   height: 53px;
+  border-radius: 100px;
+  background-size: cover;
+  background-position: center;
 }
 
 .card_author:first-child,
@@ -129,4 +150,23 @@ main > div {
   padding-right: 5px;
   font-size: 20px;
   font-family: "Ubuntu_Regular";
+}
+
+.card_author_header {
+  padding-bottom: 20px;
+  font-size: 30px;
+}
+
+.total_recipes {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  padding-top: 10px;
+}
+
+#total_recipes_number {
+  padding-bottom: 5px;
+  color: #FF7A00;
+  font-size: 30px;
+  font-family: "Ubuntu_Bold";
 }

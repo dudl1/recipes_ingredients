@@ -59,3 +59,9 @@ html.is-leaving.to-left main {
 html.is-animating nav > a.active {
   background: hsla(29, 100%, 45%, 0);
 }
+
+html.is-animating nav.active {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  opacity: 1;
+}
