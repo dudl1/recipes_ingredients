@@ -1,13 +1,5 @@
 .wrap_app {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  height: 100%;
   z-index: 2;
 }
 
@@ -16,9 +8,7 @@
   display: -ms-flexbox;
   display: flex;
   margin-top: 60px;
-  height: 100%;
   padding: 0 50px 50px 50px;
-  overflow: hidden;
 }
 
 header {
@@ -48,19 +38,11 @@ header > div {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 25px 50px 0 50px;
+  padding: 25px 50px 0 50px;
 }
 
 .block_input {
   position: absolute;
-  border-radius: 33px;
-  -webkit-transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-.block_input:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
 }
 
 .block_input > div {
@@ -117,8 +99,6 @@ nav > a {
   height: 75px;
   border-radius: 34px;
   opacity: 0.7;
-  -webkit-transition: 0.2s ease-in-out;
-  transition: 0.2s ease-in-out;
 }
 
 nav > a.active {
@@ -131,6 +111,10 @@ nav > a > span {
   color: black;
   font-size: 20px;
   font-family: "Ubuntu_Regular";
+}
+
+main {
+  padding-left: 50px;
 }
 
 .background_cover {
@@ -152,17 +136,4 @@ nav > a > span {
   -webkit-backdrop-filter: blur(5.7px);
           backdrop-filter: blur(5.7px);
   z-index: 1;
-}
-
-.event_background {
-  pointer-events: none;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.35);
-  z-index: 9;
-  opacity: 0;
-  -webkit-transition: 0.2s ease-in-out;
-  transition: 0.2s ease-in-out;
 }
